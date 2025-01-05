@@ -16,6 +16,10 @@
   body {
     height: 100vh;
     background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
   }
   .wrapper {
     font-size: 16px;
@@ -27,10 +31,10 @@
     left: 50%;
   }
   .container {
-    width: 100%;
+    width: 110%;
     background: var(--transp-white-2);
     backdrop-filter: blur(10px);
-    padding: 3em 1.8em;
+    padding: 4em 2em;
     border: 2px solid var(--transp-white-2);
     border-radius: 0.6em;
     box-shadow: 0 1.8em 3.7em var(--shadow);
@@ -40,32 +44,21 @@
     position: absolute;
     background-color: var(--transp-white-1);
     backdrop-filter: blur(1.2em);
-    border: 2px solid var(--transp-white-2);
     border-radius: 50%;
-  }
-  .shape-1 {
-    height: 13em;
-    width: 13em;
-    right: -6.5em;
-    top: 1.8em;
-  }
-  .shape-2 {
-    height: 11em;
-    width: 11em;
-    bottom: -3.7em;
-    left: -2.5em;
-  }
+    border: 2px solid var(--transp-white-2);
+    animation: rotateShape 5s linear infinite;
+  } 
   .search-container {
-    font-size: 1em;
-    display: grid;
-    grid-template-columns: 9fr 3fr;
-    gap: 1.25em;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1em;
+}
   .search-container input,
   .search-container button {
-    outline: none;
     font-size: 1em;
     border: none;
+    outline: none;
+    padding: 0.75em;
   }
   .search-container input {
     padding: 0.7em;
