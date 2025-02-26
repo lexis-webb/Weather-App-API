@@ -41,5 +41,6 @@ const getWeather = async () => {
   }
 };
 
+
 searchBtn.addEventListener("click", getWeather);
 window.addEventListener("load", getWeather);
